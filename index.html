@@ -1,85 +1,96 @@
 <!DOCTYPE html>
-<!-- HIIIIIIII -->
+<!-- HIIIIIIIIIII,你真的来看我的源码了 -->
 <html lang="zh-CN">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>BRUH MOUMENT</title>
+  <meta property="og:image" content="./img/icon.png" />
+  <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="sidebar.css">
+  <script src="sidebar.js"></script>
+
 </head>
 
 <body style="background-color: #f1f1f1;">
+
   <ul>
-    <div style="
+    <!-- 展开按钮 -->
+    <span style="
+      font-size:25px;
+      cursor:pointer;
+      margin-left: 10px;
+      padding: 15px;
+      position: fixed;
+      " onclick="openNav()">&#9776;</span>
+    <!-- 侧边栏 -->
+    <div id="mySidenav" class="sidenav">
+      <div style="
       padding: 50px;
       margin-left: -5%;
+      margin-bottom: 5%;
+      margin-top: -8%;
       text-align: center;
       ">
-      <font size="4">Skot's Website</font>
+        <font size="4">Skot's Website</font>
+      </div>
+      <!-- 收起按钮,选项卡 -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <li><a class="active" href="./index.html">
+          <img src="./img/home.png" class="imgPlace" width="25px" height="25px"> 主页</a></li>
+      <li><a href="./painting.html">
+          <img src="./img/pic.png" class="imgPlace" width="25px" height="25px"> 画廊</a></li>
+      <li><a href="./about.html">
+          <img src="./img/about.png" class="imgPlace" width="25px" height="25px"> 关于</a></li>
+      <li><a href="./other.html">
+          <img src="./img/other.png" class="imgPlace" width="25px" height="25px"> 其他</a></li>
     </div>
-    <li><a class="active" href="./index.html">
-        <img src="./img/home.png" class="imgPlace" width="25px" height="25px"> 主页</a></li>
-    <li><a href="./painting.html">
-        <img src="./img/pic.png" class="imgPlace" width="25px" height="25px"> 画廊</a></li>
-    <li><a href="./contact.html">
-        <img src="./img/call.png" class="imgPlace" width="25px" height="25px"> 联系</a></li>
-    <li><a href="./about.html">
-        <img src="./img/about.png" class="imgPlace" width="25px" height="25px"> 关于</a></li>
-    <li><a href="./other.html">
-        <img src="./img/other.png" class="imgPlace" width="25px" height="25px"> 其他</a></li>
   </ul>
-  <!-- ↑弱智导航栏 -->
-  <!-- ↓背景和玛卡巴卡 -->
 
-  <div style="text-align:center; padding: 29px; padding-left:15%;">
-    <img alt="玛卡巴卡" src="https://y.gtimg.cn/music/photo_new/T002R300x300M000003NSjr82AJs1n_1.jpg?max_age=2592000"
-      width="120px" height="120px padding-left:55%">
-  </div>
-  <div style="
-    background-color:#ffffff;
-    text-align:center;
-    padding: 30px;
-    padding-left:15%;
-    ">
-    <div>
-      <br>
-      <h1>欢迎来到我的网站!</h1>
-      <h4>我是,呃.Skotvnicotawaskitch,大概</h4>
-      <p>这里还没什么东西，之后会完善的<small>(或许吧)</small></p>
-      <br>
+  <div id="main">
+    <!-- 玛卡巴卡 -->
+    <div style="text-align:center; padding: 30px;">
+      <img alt="玛卡巴卡" src="https://y.gtimg.cn/music/photo_new/T002R300x300M000003NSjr82AJs1n_1.jpg?max_age=2592000"
+        width="120px" height="120px padding-left:55%">
     </div>
-    <div style="
+    <div class="bg" style="text-align: center;">
+      <div>
+        <br>
+        <h1>欢迎来到我的网站!</h1>
+        <p>我是,呃.<strong>Skotvnicotawaskitch</strong>,大概</p>
+        <br>
+      </div>
+      <div style="
       text-align:left;
       padding: 30px;
-      padding-left:10%;
+      padding-left:12%;
       line-height:2;
       ">
-      <hr>
-      <br>
-      <h2>导航栏功能</h2>
-      <!-- 有什么好介绍的,点进去不就知道了吗 -->
-      <h3>画廊:</h3>
-      <p>这几年画的画,有的被裁剪过,点击查看原图.<br>大多是临摹,请不要随便拿走,原作者会找上门的(</p>
-      <!-- 你画的也配?丑人多作怪了属于是 -->
-      <h3>联系:</h3>
-      <p>只是一些社交网站的账号</p>
-      <h3>关于:</h3>
-      <p>大概是简历,万一能用上呢</p>
-      <h3>其他:</h3>
-      <p>就是一些闲聊啦,因为我真的很闲.还有征婚而已</p>
-      <p>可以翻翻源码,有彩蛋,包括但不限于"多余的注释"和"多余的图片"</p>
-      <!-- 是谁在迫害咪酱? -->
-      <br>
-    </div>
+        <hr>
+        <br>
+        <h2>侧边栏功能<small>(点击左上角按钮)</small></h2>
+        <!-- 有什么好介绍的,点进去不就知道了吗 -->
+        <h3>画廊:</h3>
+        <li>这几年画的画,大多是临摹,有的被裁剪过,点击查看原图.</li>
+        <h3>关于:</h3>
+        <li>大概是简历,联系方式和一些闲聊,因为我真的很闲.</li>
+        <h3>其他:</h3>
+        <li>从别人网站上扒下来的游戏,或者别的好玩的东西</li>
+        <p>可以翻翻源码,有彩蛋,包括但不限于"多余的注释"和"多余的图片"</p>
+        <!-- 是谁在迫害咪酱? -->
+        <br>
+      </div>
 
-  </div>
-  <div style=" text-align:center; padding: 30px; padding-left:10%;">
-    <small>
-      <a style="margin: 10px" href="./robot.html/" target="_blank" rel="noopener noreferrer">QQ机器人(鸽了</a>
-      <a href="https://space.bilibili.com/34786453" target="_blank" rel="noopener noreferrer">友情链接</a>
-      </span>
-    </small>
+    </div>
+    <div style=" text-align:center; padding: 30px; padding-left:10%;">
+      <small>
+        <a style="margin: 10px" href="./robot.html/" target="_blank" rel="noopener noreferrer">QQ机器人(鸽了</a>
+        <a href="https://space.bilibili.com/34786453" target="_blank" rel="noopener noreferrer">友情链接</a>
+        </span>
+      </small>
+    </div>
   </div>
 </body>
 
