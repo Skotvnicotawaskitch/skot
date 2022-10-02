@@ -19,12 +19,12 @@ function f() {
     Bn.style.left = sJs2 + "px";
     flag = 3;
   } else if (flag == 3) {
-    Bn.style.top = 2150 + "px";
-    Bn.style.left = 225 + "px";
+    Bn.style.top = 1600 + "px";
+    Bn.style.left = 555 + "px";
     flag = 4;
   } else if (flag == 4) {
-    Bn.style.top = 2150 + "px";
-    Bn.style.left = 310 + "px";
+    Bn.style.top = 1600 + "px";
+    Bn.style.left = 630 + "px";
     flag = 1;
   }
 }

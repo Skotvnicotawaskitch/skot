@@ -6,24 +6,36 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>BRUH MOUMENT</title>
-  <link rel="shortcut icon" href="./img/favicon.ico">
+  <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" type="text/css" href="li.css">
   <link rel="stylesheet" type="text/css" href="sidebar.css">
   <script src="sidebar.js"></script>
 
 </head>
 
-<body style="background-color: #f1f1f1;">
+<body id="main" style="background-color: #f1f1f1;margin: 0;padding: 0;">
+  <!-- 图 -->
+  <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer" class="outer">
+      <div id="header-title" class="inner">
+        <h1 id="logo-wrap">欢迎来到我的网站!</h1>
+        <h2 id="subtitle-wrap">我是,呃.<strong>Skotvnicotawaskitch</strong>,大概</h2>
+      </div>
+      <!-- 展开按钮 -->
+      <span id="header-inner" class="inner" onclick="openNav()" style="
+        font-size:25px;
+        cursor:pointer;
+        margin-left: -140px;
+        padding: 15px;
+        position: fixed;
+        ">&#9776;</span>
+    </div>
+  </header>
 
   <ul>
-    <!-- 展开按钮 -->
-    <span style="
-      font-size:25px;
-      cursor:pointer;
-      margin-left: 10px;
-      padding: 15px;
-      position: fixed;
-      " onclick="openNav()">&#9776;</span>
+
     <!-- 侧边栏 -->
     <div id="mySidenav" class="sidenav">
       <div style="
@@ -48,48 +60,48 @@
     </div>
   </ul>
 
-  <div id="main">
-    <!-- 玛卡巴卡 -->
+
+  <div>
+
+    <!-- 
     <div style="text-align:center; padding: 30px;">
       <img alt="玛卡巴卡" src="https://y.gtimg.cn/music/photo_new/T002R300x300M000003NSjr82AJs1n_1.jpg?max_age=2592000"
         width="120px" height="120px padding-left:55%">
+      <h1>欢迎来到我的网站!</h1>
+      <p>我是,呃.<strong>Skotvnicotawaskitch</strong>,大概</p>
     </div>
-    <div class="bg" style="text-align: center;">
-      <div>
-        <br>
-        <h1>欢迎来到我的网站!</h1>
-        <p>我是,呃.<strong>Skotvnicotawaskitch</strong>,大概</p>
-        <br>
-      </div>
-      <div style="
+   -->
+    <div class="bg" style="
       text-align:left;
       padding: 30px;
       padding-left:12%;
       line-height:2;
       ">
-        <hr>
-        <br>
-        <h2>侧边栏功能<small>(点击左上角按钮)</small></h2>
-        <!-- 有什么好介绍的,点进去不就知道了吗 -->
-        <h3>画廊:</h3>
-        <li>这几年画的画,大多是临摹,有的被裁剪过,点击查看原图.</li>
-        <h3>关于:</h3>
-        <li>大概是简历,联系方式和一些闲聊,因为我真的很闲.</li>
-        <h3>其他:</h3>
-        <li>从别人网站上扒下来的游戏,或者别的好玩的东西</li>
-        <p>可以翻翻源码,有彩蛋,包括但不限于"多余的注释"和"多余的图片"</p>
-        <!-- 是谁在迫害咪酱? -->
-        <br>
-      </div>
+      <br>
+      <h2>侧边栏功能<small>(点击左上角按钮)</small></h2>
+      <!-- 有什么好介绍的,点进去不就知道了吗 -->
+      <h3>画廊:</h3>
+      <li>这几年画的画,大多是临摹,有的被裁剪过,点击查看原图.</li>
+      <h3>关于:</h3>
+      <li>大概是简历,联系方式和一些闲聊,因为我真的很闲.</li>
+      <h3>其他:</h3>
+      <li>简略版博客</li>
+      <br>
+      <p>可以翻翻源码,有彩蛋,包括但不限于"多余的注释"和"多余的图片"</p>
+      <!-- 是谁在迫害咪酱? -->
+      <p>
+        感谢<a href="https://github.com/NriotHrreion">NriotHrreion</a>给我的参考. 很难想象他今年刚中考完.
+      </p>
+    </div>
 
-    </div>
-    <div style=" text-align:center; padding: 30px; padding-left:10%;">
-      <small>
-        <a style="margin: 10px" href="./robot.html/" target="_blank" rel="noopener noreferrer">QQ机器人(鸽了</a>
-        <a href="https://space.bilibili.com/34786453" target="_blank" rel="noopener noreferrer">友情链接</a>
-        </span>
-      </small>
-    </div>
+  </div>
+  <div style=" text-align:center; padding: 30px 0;">
+    <small>
+      <a style="margin: 10px" href="./robot.html/" target="_blank" rel="noopener noreferrer">QQ机器人(鸽了</a>
+      <a href="https://space.bilibili.com/34786453" target="_blank" rel="noopener noreferrer">友情链接</a>
+      </span>
+    </small>
+  </div>
   </div>
 </body>
 
