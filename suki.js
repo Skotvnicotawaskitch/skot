@@ -24,7 +24,7 @@ function f() {
     flag = 4;
   } else if (flag == 4) {
     Bn.style.top = 1600 + "px";
-    Bn.style.left = 630 + "px";
+    Bn.style.left = 610 + "px";
     flag = 1;
   }
 }

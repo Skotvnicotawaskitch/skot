@@ -7,22 +7,52 @@ ul {
   margin: 0;
   padding: 0;
 }
-li a {
+
+/* 链接 */
+a:link {
+  color: #288bea;
+  text-decoration: none;
+}
+a:visited {
+  color: #288bea;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.li a {
   display: block;
   color: #000;
   padding: 8px 16px;
   text-decoration: none;
 }
-li a.active {
-  background-color: #4caf50;
+.li a.active {
+  background-color: #288bea;
   color: white;
 }
-li a:hover:not(.active) {
+.li a:hover:not(.active) {
   background-color: #555;
   color: white;
 }
-a:link {
+
+.singlea a:link {
   color: #000;
+}
+.singlea a:visited {
+  color: #000;
+}
+.singlea a:hover {
+  color: #000;
+}
+
+.singleb a:link {
+  color: #258fb8;
+}
+.singleb a:visited {
+  color: #258fb8;
+}
+.singleb a:hover {
+  color: #258fb8;
 }
 /* 123 */
 .background {
@@ -32,12 +62,22 @@ a:link {
   padding-left: 5%;
   margin: 0;
 }
+#footer {
+  padding: 50px 0;
+  border-top: 1px solid #ddd;
+  color: #999;
+}
+footer {
+  display: block;
+}
+#footer-info {
+  line-height: 1.6em;
+  font-size: 0.85em;
+}
 
 .bg {
   background-color: #fff;
   padding: 30px;
-  margin-left: -30px;
-  margin-right: -15px;
 }
 .text_line {
   clear: both;
@@ -76,7 +116,7 @@ a:link {
 
 .sidenav a:hover,
 .offcanvas a:focus {
-  color: #4caf50;
+  color: #288bea;
 }
 
 .sidenav .closebtn {
