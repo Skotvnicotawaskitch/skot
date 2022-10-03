@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+<!-- 讨厌写注释 -->
 
 <head>
   <meta charset="utf-8" />
@@ -12,7 +13,7 @@
   <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
 </head>
 
-<body id="main" style="margin: 0;padding: 0;">
+<div id="main" style="margin: 0;padding: 0;">
   <!-- 图 -->
   <header id="header">
     <div id="banner"></div>
@@ -34,14 +35,16 @@
 
   <!-- 侧边栏 -->
   <script src="sidebar.js"></script>
-  <ul>
-    <div id="mySidenav" class="sidenav">
+
+  <div id="mySidenav" class="sidenav singlea">
+    <ul>
       <div style="
         padding: 50px;
         margin-left: -5%;
         margin-bottom: 5%;
         margin-top: -5%;
         text-align: center;
+        font-weight: 300;
         ">
         <font size="4">Skot's Website</font>
       </div>
@@ -55,8 +58,19 @@
           <img src="./img/about.png" class="imgPlace" width="25px" height="25px"> 关于</a></li>
       <li class="li"><a href="./other.html">
           <img src="./img/other.png" class="imgPlace" width="25px" height="25px"> 其他</a></li>
-  </ul>
-
+    </ul>
+    <br><br>
+    <hr>
+    <ul style="margin: 6px 0;">
+      <h3 style="margin: 20px;">链接</h3>
+      <li><a href="https://github.com/Skotvnicotawaskitch" target="_blank" class="sidebar-link" title="Github">-
+          Github</a></li>
+      <li><a href="https://space.bilibili.com/453121194" target="_blank" class="sidebar-link" title="Bilibili">-
+          Bilibili</a></li>
+      <li><a href="mailto:ace_h57@foxmail.com" target="_blank" class="sidebar-link" title="E-mail">-
+          E-mail</a></li>
+    </ul>
+  </div>
   <!-- 知不道写啥 -->
   <div style="background-color: #fff;">
     <div style="padding: 30px 150px;">
@@ -352,6 +366,7 @@
       <br><br><br><br><br>
     </div>
   </div>
+  <!-- 尾 -->
   <footer id="footer" class="singleb" style=" text-align:center; padding: 70px 0;">
     <div id="footer-info" class="inner" style="margin-top: -10px;">
       <small>
@@ -361,6 +376,6 @@
       </small>
     </div>
   </footer>
-</body>
+  </body>
 
 </html>
