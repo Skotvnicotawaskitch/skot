@@ -20,11 +20,11 @@ function f() {
     flag = 3;
   } else if (flag == 3) {
     Bn.style.top = 1600 + "px";
-    Bn.style.left = 555 + "px";
+    Bn.style.left = 40 + "%";
     flag = 4;
   } else if (flag == 4) {
     Bn.style.top = 1600 + "px";
-    Bn.style.left = 610 + "px";
+    Bn.style.left = 45 + "%";
     flag = 1;
   }
 }
