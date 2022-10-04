@@ -21,7 +21,7 @@ article-meta {
 .blog-description,
 .article-inner,
 .archive-article-inner {
-  background: #fff;
+  background: #f9f9f9;
   -webkit-box-shadow: 1px 2px 3px #ddd;
   box-shadow: 1px 2px 3px #ddd;
   border: 1px solid #ddd;
