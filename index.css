@@ -8,6 +8,31 @@ ul {
   padding: 0;
 }
 
+/* 创建两列 */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 50%;
+}
+/* 右侧栏 */
+.rightcolumn {
+  float: left;
+  width: 30%;
+  height: max-content;
+  margin-left: 10%;
+}
+/* 文章卡片 */
+.card {
+  padding: 20px;
+  margin-top: 60px;
+}
+/* 列后清除浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /* 链接 */
 a:link {
   color: #288bea;
@@ -66,6 +91,7 @@ a:hover {
   padding: 50px 0;
   border-top: 1px solid #ddd;
   color: #999;
+  clear: both;
 }
 footer {
   display: block;
